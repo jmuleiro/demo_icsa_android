@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ApprovalDetailsActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray"
+        android:textSize="18dp"
+        android:text="Aprobación" />
+    <TextView
+        android:id="@+id/approval_details_approval_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:text="Lorem Ipsum Dolor" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:layout_marginVertical="0dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginVertical="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginVertical="10dp">
+            <TextView
+                android:id="@+id/approval_details_datecreated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="18dp"
+                android:text="lor/em/ipsum" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="16dp"
+                android:text="Legajo" />
+            <TextView
+                android:id="@+id/approval_details_emplid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginLeft="5dp"
+                android:textSize="18dp"
+                android:text="Lorem Ipsum"
+                />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:textSize="18dp"
+            android:text="Nombre" />
+        <TextView
+            android:id="@+id/approval_details_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="26dp"
+            android:text="Lorem Ipsum Dolor Sit Amet" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginVertical="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:textSize="18dp"
+            android:text="Nombre de usuario" />
+        <TextView
+            android:id="@+id/approval_details_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:text="Lorem Ipsum Dolor" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginVertical="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:textSize="18dp"
+            android:text="Modificación" />
+        <TextView
+            android:id="@+id/approval_details_data_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-10dp"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:text="Lorem Ipsum Dolor" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="10dp"
+        android:paddingHorizontal="5dp">
+        <TextView
+            android:id="@+id/approval_details_old_data"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:maxWidth="165dp"
+            android:minHeight="80dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray"
+            android:textSize="20dp"
+            android:text="Av. Córdoba 1234, 1°A, CABA, Argentina" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:maxHeight="80dp"
+            android:src="@drawable/arrow_right"
+            android:tint="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/approval_details_new_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxWidth="165dp"
+            android:minHeight="80dp"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:text="Av. Córdoba 1234, 1°A, CABA, Argentina" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center|bottom">
+        <Button
+            android:id="@+id/approval_btn_approve"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/approval_aprove_btn"
+            android:text="@string/approval_approve"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="-30dp" />
+
+        <Button
+            android:id="@+id/approval_btn_reject"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/approval_reject_btn"
+            android:text="@string/approval_reject"
+            android:textColor="@color/white"
+            android:textSize="22dp" />
+    </LinearLayout>
+</LinearLayout>
